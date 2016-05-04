@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.trentearley.snake"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClassicSnake">
+        </activity>
+        <activity android:name=".NoWallsSnake">
+        </activity>
+        <activity android:name=".BombSnake">
+        </activity>
+        <activity android:name=".Settings">
+        </activity>
+        <activity
+            android:name=".ClassicScore"
+            android:label="@string/title_activity_classic_score">
+        </activity>
+        <activity
+            android:name=".NoWallsScore"
+            android:label="@string/title_activity_no_walls_score">
+        </activity>
+        <activity
+            android:name=".BombScore"
+            android:label="@string/title_activity_bomb_score">
+        </activity>
+    </application>
+
+</manifest>
